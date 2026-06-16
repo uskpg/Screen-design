@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>로그인</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+  <header>
+      <div class="logo">매일기</div>
+      <nav>
+        <a href="/html/loginedindex.html">홈</a>
+        <a href="/html/write.html">일기 작성</a>
+        <a href="/html/save.html">보관함</a>
+        <a href="/html/random.html">주제 추천</a>
+        <a href="/html/index.html" class="active">로그인</a>
+      </nav>
+  </header>
+
+  <main>
+    <div class="login">
+      <h2>Login</h2>
+      <form method="post" id="login-form">
+        <div class="login-id">
+          <input type="text" name="id" placeholder="아이디" />
+        </div>
+        <div class="login-pw">
+          <input type="password" name="passwd" placeholder="비밀번호" />
+        </div>
+        <div class="goto">
+          <input type="button" onclick="alert('로그인에 성공하였습니다.'); location.href='/html/loginedindex.html'" value="Login"class="gotohome"/>
+          로그인
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+</body>
+</html> 

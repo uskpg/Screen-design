@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-family: "Hi Melody";
+    font-weight:900;
+    font-size: 45px;
+    text-align: center;
+}
+.gotolgnBtn {
+    text-align: center;
+    padding:5px 15px 8px 15px;
+    min-width: 200px;
+    min-height: 30px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    border:2px solid #000;
+    color:#000;
+    font-family: "Hi Melody";
+    font-size: large;
+    background-color: #fafa9e;
+}
+
+.goto{
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center;
+}
+
+.hi-melody-regular {
+    font-family: "Hi Melody", sans-serif; /*폰트*/
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family:sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+header {
+    background-color: #fafa9e;  
+    padding: 10px 20px;
+    display: flex;         /* 왼쪽 이름과 오른쪽 메뉴를 가로로 배치 */
+    align-items: center;   /* 세로 중앙 정렬 */
+}
+
+/* 사이트 이름 */
+.logo {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Hi Melody";
+    margin-right: 30px;    /* 메뉴와의 간격 */
+}
+
+/* 헤더 메뉴 스타일 */
+nav a {
+    color:  #00012b;
+    text-decoration: none; /* 밑줄 제거 */
+    margin-right: 28px;
+    font-family: "Hi Melody";
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* 메뉴 마우스 올렸을 때 & 현재 위치한 페이지 표시 */
+nav a:hover, nav a.active {
+    color: #ffffff;        /* 글자색 하얗게 */
+}
+
+/* 본문 내용 스타일 */
+main {
+    padding: 40px 20px;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
