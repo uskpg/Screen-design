@@ -68,52 +68,46 @@ main {
     /* 세로정렬 */
     align-items: center;     
     /* 가로정렬 */
-    gap: 15px;               
-    /* 입력창 사이의 간격을 일정하게 띄워줌*/
-}
-/* 기본 css */
-input[type=text]{
-    font-size: large;
-    border: none;
-    border-bottom: 1px solid #6b5b52;
-    outline: none;
 }
 
-/* 각 입력 요소를 감싸는 테두리 스타일 */
-.write-day, 
-.write-name, 
-.write-feel, 
-.write-one {
-    border: 2px solid #e0d5c8; 
-    border-radius: 10px;       
-    padding: 15px 20px;        
-    background-color: #fff;   
-    width:48%;              
-    display: flex;            
-    align-items: center;       
-    /* 세로 가운데 정렬 */
-    gap: 10px;                 
-    /* 라벨과 입력창 사이 간격 */
-    font-size: 30px;
+/* 일기 목록 전체를 감싸는 영역 */
+.diary-list {
+    width: 70%;
+    background-color: #fff;
+    border: 2px solid #e0d5c8;
+    border-radius: 10px;
+    overflow: hidden; 
+    /* 내부 항목들이 둥근 모서리 밖으로 나가지 않도록 */
 }
 
-/* 라벨 텍스트 스타일 정리 */
-label {
+/* 일기 한 개 항목 */
+.diary-item {
+    padding: 20px 30px;
+    border-bottom: 1px solid #e0d5c8; 
+    /* 항목 사이 구분선 */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* 마지막 항목은 구분선 제거 */
+.diary-item:last-child {
+    border-bottom: none;
+}
+/* 호버 색깔 */
+.diary-item:hover {
+    background-color: #fff8e8; 
+}
+
+/* 일기 날짜 */
+.diary-date {
+    font-size: 22px;
     font-weight: bolder;
-    font-size: 17px;
+    color: #4a3e3d;
+    margin-bottom: 8px;
 }
 
-/* 일기 내용 입력칸 */
-textarea{
+/* 일기 한 줄 요약 */
+.diary-summary {
     font-size: 18px;
-    border: 2px solid #e0d5c8; 
-    border-radius: 10px;       
-    padding: 15px 20px;        
-    background-color: #fff;    
-    
-    display: flex;             
-    align-items: center;       
-    /* 세로 가운데 정렬 */
-    gap: 10px;                 
-    /* 라벨과 입력창 사이 간격 */
+    color: #4a3e3d;
 }

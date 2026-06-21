@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>보관함</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>보관함</title>
+        <link rel="stylesheet" href="/css/save.css">
+    </head>
+    <body>
 
-  <header>
-      <div class="logo">매일기</div>
-      <nav>
-          <a href="index.html">홈</a>
-          <a href="page1.html">일기 작성</a>
-          <a href="page2.html" class="active">보관함</a>
-          <a href="page3.html">주제 추천</a>
-          <a href="page4.html">로그인</a>
-      </nav>
-  </header>
+        <!-- 맨 위 헤더-->
+        <header>
+            <div class="logo">매일기</div>
+            <nav>
+                <!--헤더 내비게이션-->
+                <a href="loginedindex.html">홈</a>
+                <a href="write.html">일기 작성</a>
+                <a href="save.html" class="active">보관함</a>
+                <a href="random.html">주제 추천</a>
+            </nav>
+        </header>
 
-  <main>
-      <h1>2번째 페이지</h1>
-      <p>두 번째 페이지의 콘텐츠입니다.</p>
-  </main>
+        <!-- 메인 내용 -->
+        <main>
+            <div class="diary-list">
+              <!-- 예시 1 -->
+                <div class="diary-item">
+                    <div class="diary-date">2026.05.18</div>
+                    <div class="diary-summary">오늘은 친구들과 즐거운 하루였다...</div>
+                </div>
+                <!-- 예시 2 -->
+                <div class="diary-item">
+                    <div class="diary-date">2026.05.17</div>
+                    <div class="diary-summary">시험이 끝나서 기분이 좋았다...</div>
+                </div>
+                <!-- 예시 3 -->
+                <div class="diary-item">
+                    <div class="diary-date">2026.05.16</div>
+                    <div class="diary-summary">비가 와서 집에서 쉬었다...</div>
+                </div>
+                <!-- 예시 4 -->
+                <div class="diary-item">
+                    <div class="diary-date">2026.05.15</div>
+                    <div class="diary-summary">가족과 외식을 했다...</div>
+                </div>
 
-</body>
+            </div>
+            <!-- 일기 목록 -->
+        </main>
+
+    </body>
 </html>

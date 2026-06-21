@@ -1,89 +1,108 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;               
+    padding: 0;                
+    box-sizing: border-box;    
+    font-family: "Hi Melody", sans-serif;  
+/* 기본 폰트 지정 */
 }
 
-p {
-    margin-top: 150px;
-    margin-bottom: 50px;
-    font-family: "Hi Melody";
-    font-weight:900;
-    font-size: 45px;
-    text-align: center;
-}
-.gotolgnBtn {
-    text-align: center;
-    padding:5px 15px 8px 15px;
-    min-width: 200px;
-    min-height: 30px;
-    height: auto;
-    box-sizing: border-box;
-    border-radius: 50px;
-    font-size: 12px;
-    font-weight: 700;
-    border:2px solid #000;
-    color:#000;
-    font-family: "Hi Melody";
-    font-size: large;
-    background-color: #fafa9e;
-}
-
-.goto{
-    display: flex;
-    justify-content: center; /* 가로 가운데 정렬 */
-    align-items: center;
-}
-
+/*폰트*/
 .hi-melody-regular {
-    font-family: "Hi Melody", sans-serif; /*폰트*/
+    font-family: "Hi Melody", sans-serif; 
     font-weight: 400;
     font-style: normal;
 }
 
 body {
-    font-family:sans-serif;
-    background-color: #f5f5f5;
-    color: #333333;
+    background-color: #fdfbf7; 
+    color: #4a3e3d;            
 }
 
+/* 헤더 */
 header {
-    background-color: #fafa9e;  
-    padding: 10px 20px;
-    display: flex;         /* 왼쪽 이름과 오른쪽 메뉴를 가로로 배치 */
-    align-items: center;   /* 세로 중앙 정렬 */
+    display: flex;              
+    /* 로고랑 메뉴 가로로 나란히 배치 */
+    background-color: #ffea83;  
+    align-items: center;        
+    /* 세로 가운데 정렬 */
+    padding: 15px 40px;         
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);  
 }
 
-/* 사이트 이름 */
+/* 헤더 네비게이션 바 맨 왼쪽 로고 */
 .logo {
-    color: #ffffff;
+    margin-right: 40px;        
+    /* 로고랑 메뉴 사이 간격 */
+    color: #ffb347;           
     font-size: 36px;
     font-weight: bold;
-    font-family: "Hi Melody";
-    margin-right: 30px;    /* 메뉴와의 간격 */
 }
 
-/* 헤더 메뉴 스타일 */
+/* 헤더 네비게이션 바 */
 nav a {
-    color:  #00012b;
-    text-decoration: none; /* 밑줄 제거 */
-    margin-right: 28px;
-    font-family: "Hi Melody";
-    font-size: 23px;
+    margin-right: 28px;        
+    text-decoration: none;      
+    /* 링크 밑줄 없애기 */
+    font-size: 22px;
     font-weight: bold;
+    color: #6b5b52;
+    transition: color 0.3s ease;  
+    /* 색 바뀔 때 부드럽게 */
 }
 
-/* 메뉴 마우스 올렸을 때 & 현재 위치한 페이지 표시 */
+/* 마우스 올렸을 때랑 현재 페이지 메뉴 색 바꾸기 */
 nav a:hover, nav a.active {
-    color: #ffffff;        /* 글자색 하얗게 */
+    color: #ff9f43;            
 }
 
-/* 본문 내용 스타일 */
+/* 본문 */
 main {
-    padding: 40px 20px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;     
+    /* 내용물 세로로 쌓기 */
+    align-items: center;        
+    /* 가로 가운데 정렬 */
+
 }
 
-main h1 {
-    margin-bottom: 20px;
+main hr {
+    display: block;          
+    width: 150%;             
+    border: 0;               
+    border-top: 2px solid #e0d5c8;
+    margin: 20px 0;         
+    /* 위아래 간격 추가 */
 }
+
+/*본문 큰 텍스트*/
+p {
+    margin-top: 150px;          
+    /* 위쪽 많이 띄워서 가운데처럼 보이게 */
+    margin-bottom: 50px;
+    font-family: "Hi Melody";
+    font-weight:900;
+    font-size: 45px;            
+}   
+
+/* 로그인 창 이동 버튼 */
+.gotolgnBtn {
+    text-align: center;
+    padding:5px 15px 8px 15px;
+    min-width: 200px;           
+    min-height: 30px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 50px;       
+     /* 양쪽 끝 둥글게 */
+    font-size: 12px;
+    font-weight: 700;
+    color:#000;
+    font-size: large;           
+    background-color: #ffea83;  
+    /* 헤더랑 같은 노란색 */
+}
+
+

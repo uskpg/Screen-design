@@ -7,9 +7,11 @@
 </head>
 <body>
 
+  <!-- 맨 위 헤더-->
   <header>
       <div class="logo">매일기</div>
       <nav>
+        <!--헤더 내비게이션-->
         <a href="/html/loginedindex.html">홈</a>
         <a href="/html/write.html">일기 작성</a>
         <a href="/html/save.html">보관함</a>
@@ -18,19 +20,22 @@
       </nav>
   </header>
 
+  <!-- 메인 내용 -->
   <main>
     <div class="login">
       <h2>Login</h2>
       <form method="post" id="login-form">
+        <!-- 아이디 입력 -->
         <div class="login-id">
           <input type="text" name="id" placeholder="아이디" />
         </div>
+        <!-- 비밀번호 입력 -->
         <div class="login-pw">
           <input type="password" name="passwd" placeholder="비밀번호" />
         </div>
         <div class="goto">
+          <!-- 로그인 버튼, 누르면 로그인된 홈으로 이동 -->
           <input type="button" onclick="alert('로그인에 성공하였습니다.'); location.href='/html/loginedindex.html'" value="Login"class="gotohome"/>
-          로그인
         </div>
       </form>
     </div>
@@ -38,4 +43,4 @@
   </main>
 
 </body>
-</html> 
+</html>

@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>주제 추천</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>주제 추천</title>
+    <link rel="stylesheet" href="/css/random.css">
+  </head>
+  <body>
 
-  <header>
+    <!-- 맨 위 헤더-->
+    <header>
       <div class="logo">매일기</div>
       <nav>
-          <a href="index.html">홈</a>
-          <a href="page1.html">일기 작성</a>
-          <a href="page2.html">보관함</a>
-          <a href="page3.html" class="active">주제 추천</a>
-          <a href="page4.html">로그인</a>
+          <!--헤더 내비게이션-->
+          <a href="loginedindex.html">홈</a>
+          <a href="write.html">일기 작성</a>
+          <a href="save.html">보관함</a>
+          <a href="random.html" class="active">주제 추천</a>
       </nav>
   </header>
 
+  <!-- 메인 내용 -->
   <main>
-      <h1>3번째 페이지</h1>
-      <p>세 번째 페이지의 콘텐츠입니다.</p>
-  </main>
+      <div class="topic-box">
 
-</body>
+        <div class="topic-label">오늘의 주제</div>
+
+        <div class="topic-word">여행</div>
+
+        <input type="button" value="다시 추천받기" class="retry-btn" />
+        <!-- 다시 추천받기 버튼 -->
+
+        <div class="topic-desc">여행과 관련된 경험을 떠올려보세요.</div>
+
+      </div>
+        <!-- 주제 추천 박스 -->
+    </main>
+
+  </body>
 </html>
